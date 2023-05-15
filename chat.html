@@ -50,46 +50,50 @@
     </div>
   </div>
 
-
-<main>
-    <div class="container">
-        <div class="row" style="display: flex !important;
-justify-content: center !important;
-align-items: center !important;">
-            <div class="col-md-6 col-logo">
-                <img src="assets/images/xivix-logo.webp" alt="Logo" class="img-fluid" style="margin-bottom: 50px;">
-         
-                <h4 style="color: #333;">XIVIX MeAI is an AI journaling assistant</h4>
-              <p style="color: #333"><a href="https://discord.gg/kZuUNXmz2B">get quick help, provide feedback, feature requests, and report issues on discord</a></p>
-            </div>
-            <div class="col-md-6 col-form d-flex justify-content-center">
-                <div class="form-container" style="background: #ccc; padding: 10px;">
-                    <form method="POST" action="/login">
-                        
-                        <h2 style="color: #333;">login</h2>
-                        <div class="form-outline mb-3">
-                            <input type="email" name="email" placeholder="Email" class="form-control">
-                        </div>
-                        <div class="form-outline mb-3">
-                            <input type="password" name="password" placeholder="Password" class="form-control">
-                        </div>
-                      <div class="form-group" style="margin-bottom: 20px;">
-                        <input type="submit" value="login" class="btn btn-primary" style="background: #333;">
-                      
-                      <a href="/guest" style="padding: 10px; color: #fff; background: #333; padding: .385rem .75rem; font-size: 1rem; line-height: 1.5; border-radius: .25rem; height: 36px;">continue as guest</a>
-                      </div>
-                    </form>
-                  <a href="/signup" style="padding: 20px; text-align: center; color: #333">don't have an account? sign up.</a>
-                  <button type="button"class="btn btn-primary mx-auto d-block text-center" style="background: #333; margin-top: 20px; margin-bottom: 20px;" data-toggle="modal" data-target="#exampleModal">
-  forgot password?
-</button>
-                  <!--<a href="https://airtable.com/shrBmphjBXpaxxUst" style="text-align: center; color: #333" class="feedback">help</a>-->
-                </div>
-            </div>
-
-        </div>
+  <div class="container">
+    <div class="logo">
+      <img src="assets/images/logo.png" alt="XIVIX">
+      <!--
+      <h4 style="text-align: center; padding-top: 5px;">em x archii is an AI chatbot <br>meant to provide therapeutic <br>support for your mental health</h4>
+      <p class="note"><em>note: if you frequently use em, you will need to click reset to reset your chat session. thanks!</em><a href="/reset-guest" class="reset" style="text-align: center;">reset</a></p>
+    -->
     </div>
-</main>
+    <div class="chatbot">
+      <section class="msger">
+        <header class="msger-header">
+          <div class="msger-header-title">
+            XIVIX MeAI
+          </div>
+        </header>
+        <main class="msger-chat">
+          <div class="msg left-msg">
+            <div class="msg-bubble">
+              <div class="msg-info">
+                <div class="msg-info-time"></div>
+              </div>
+              <div class="msg-text">
+                Hi, I'm MeAI. I'm here to support you. 🙂
+              </div>
+            </div>
+          </div>
+        </main>
+      
+        <form class="msger-inputarea">
+          <input type="text" class="msger-input" id="textInput" placeholder="Enter your message..." maxlength="3000">
+          <button type="submit" class="msger-send-btn" onclick="loading();">Send</button>
+        </form>
+      
+        <a href="#" style="text-align: center;" class="feedback">Submit Feedback</a>
+      
+        <div class='row justify-content-center'>
+          <a style="padding: 10px" href="#" style="text-align: center;" class="feedback">Terms of Service</a>
+          <a style="padding: 10px" href="#" style="text-align: center;" class="feedback">Privacy Policy</a>
+        </div>
+      </section>
+
+    </div>
+  </div>
+
 
 
 
